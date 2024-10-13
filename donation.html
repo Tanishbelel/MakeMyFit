@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate and Rent Clothes</title>
+    <link rel="stylesheet" href="donation.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <h1>MakeMyFit</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="wardrobe.html">Wardrobe</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    <h1>Donate and Rent Out Clothes</h1>
+
+    <!-- Donate Section -->
+    <section id="donateSection">
+        <h2>Contribute Towards Sustainbility</h2>
+        <div class="clothing-grid" id="donateGrid"></div>
+    </section>
+
+    <!-- Rent Section -->
+    <section id="rentSection">
+        <h2>Rent Clothes</h2>
+        <div class="clothing-grid" id="rentGrid"></div>
+    </section>
+
+    <!-- Modal for Donation Confirmation -->
+    <div id="donationModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="donationMessage">Perplexity - Donating clothes helps reduce carbon footprints by saving energy, water, and preventing landfill waste, significantly lowering greenhouse gas emissions.</p>
+            <button id="confirmDonation" class="confirm-btn">Are you sure?</button>
+        </div>
+    </div>
+    <footer>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Store. All rights reserved. | With love MakeMyFit</p>
+    </div>
+    </footer>
+    <script src="donation.js"></script>
+</body>
+</html>

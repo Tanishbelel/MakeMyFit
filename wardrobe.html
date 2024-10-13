@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wardrobe</title>
+    <link rel="stylesheet" href="wardrobe.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <h1>MakeMyFit</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="wardrobe.html" class="active">Wardrobe</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="header">
+            <h1>My Wardrobe</h1>
+            <div class="add-remove">
+                <input type="file" id="itemImage" accept="image/*" required>
+                <button id="openCameraBtn"><img src="camera.jpg" alt="camera"></button>
+                <button id="sendForDetectionBtn">Send for Detection</button> <!-- Updated button -->
+            </div>
+        </div>
+
+        <div class="wardrobe-grid" id="wardrobeGrid">
+            <!-- Clothing items will be dynamically added here -->
+        </div>
+
+        <!-- Video element for webcam -->
+        <div id="cameraContainer" style="display: none;">
+            <video id="video" width="300" height="200" autoplay></video>
+            <button id="captureBtn">Capture Photo</button>
+            <canvas id="canvas" style="display: none;"></canvas>
+        </div>
+    </div>
+    <div class="browse">
+        <a href="https://www.vogue.com/fashion/trends"><button id="browseTrendsBtn">Browse Trends</button></a>
+        <a href="fp.html"><button id="festivalPlannerBtn">Festival Planner</button></a>
+        <a href="http://127.0.0.1:5000/"><button id="festivalPlannerBtn">Virtual Try On</button></a>
+        <a href="caption.html"><button id="festivalPlannerBtn">Post On Socials</button></a>
+        <a href="detection.html"><button id="festivalPlannerBtn">Ask Ai</button></a>
+    </div>
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Store. All rights reserved. | With love MakeMyFit</p>
+        </div>
+    </footer>
+    <script src="wardrobe.js"></script>
+</body>
+</html>

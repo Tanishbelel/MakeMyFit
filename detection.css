@@ -1,0 +1,216 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9fb; /* Lighter background for a softer feel */
+    color: #444; /* Darker text for better readability */
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem; /* Increased size for more impact */
+    margin-top: 20px;
+    color: #2E7D32; /* Richer green color */
+}
+
+input[type="file"] {
+    margin-top: 20px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 2px solid #2E7D32; /* Match input border to header color */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+input[type="file"]:hover {
+    background-color: #2E7D32;
+    color: #fff;
+}
+
+#spinner {
+    display: none;
+    margin: 20px auto;
+    border: 6px solid #e0e0e0; /* Light grey for a subtle look */
+    border-top: 6px solid #2E7D32; /* Match spinner to theme */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+section {
+    background-color: #fff;
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 600px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px; /* Slightly rounded corners for modernity */
+    text-align: left;
+}
+
+h2 {
+    font-size: 1.8rem; /* Larger size for subheadings */
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Chat Section Styles */
+.card-container {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 15px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    width: 90%; /* Use percentage for better responsiveness */
+    max-width: 480px;
+    height: 500px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Consistent shadow */
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ccc; /* Slightly thicker border */
+}
+
+.card-header .img-avatar {
+    width: 100px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px; /* Reduced margin for a tighter layout */
+    background: url("perp-removebg-preview.png"); /* Avatar background color */
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.card-header .text-chat {
+    color: #333;
+    margin: 0;
+    font-size: 20px;
+}
+
+.card-body {
+    flex: 1;
+    overflow-y: auto;
+    background-color: #fafafa; /* Light background for the chat area */
+}
+
+.messages-container {
+    padding: 15px;
+}
+
+.message-box {
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+.message-box.left {
+    background-color: #e0f7fa; /* Soft blue for left messages */
+    color: #000;
+    font-size: 14px;
+    margin-right: auto;
+}
+
+.message-box.right {
+    background-color: #4CAF50; /* Green for right messages */
+    color: #fff;
+    font-size: 14px;
+    margin-left: auto;
+}
+
+.message-input {
+    display: flex;
+    padding: 10px;
+    border-top: 2px solid #ccc; /* Thicker border for better visibility */
+    background-color: #fff;
+}
+
+.message-input .message-send {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc; /* Add border for input box */
+    border-radius: 10px;
+    resize: none;
+}
+
+.message-input .button-send {
+    background-color: #2E7D32; /* Button color matches header */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.message-input .button-send:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* API Response Styling */
+.response-container {
+    padding: 15px;
+    margin: 20px;
+}
+
+.response-container .message-box {
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: #e0f7fa; /* Match response to theme */
+    color: black;
+    font-size: 14px;
+}
+
+.response-container ul {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.response-container li {
+    margin-bottom: 5px;
+}
+
+.response-container strong {
+    color: #2E7D32; /* Match strong text to theme */
+}
+
+/* Center the entire chat section */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.card-footer {
+    padding: 10px;
+    text-align: center; /* Center align the button */
+}
+
+.button-follow {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding for the button */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size */
+}
+
+.button-follow:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+

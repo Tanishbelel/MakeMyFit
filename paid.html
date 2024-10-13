@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fashion Influencer Hub</title>
+  <link rel="stylesheet" href="paid.css"> <!-- Updated link to CSS -->
+</head>
+<body>
+  <header>
+    <h1>Fashion Influencer Hub</h1>
+    <nav>
+      <ul>
+        <li><a href="#upload">Upload Content</a></li>
+        <li><a href="#advice">Fashion Advice</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="upload-section" id="upload">
+    <h2>Upload Paid Content</h2>
+    <form class="upload-form" id="uploadForm">
+      <label for="content-title">Content Title</label>
+      <input type="text" id="content-title" placeholder="Enter title" required>
+      
+      <label for="content-description">Description</label>
+      <textarea id="content-description" placeholder="Describe your content" required></textarea>
+      
+      <label for="upload-file">Upload File (Image/Video)</label>
+      <input type="file" id="upload-file" accept="image/*,video/*" required>
+      
+      <button type="submit">Upload Content</button>
+    </form>
+  </section>
+
+  <section class="advice-section" id="advice">
+    <h2>Fashion Advice from Influencers</h2>
+    <div class="influencers-grid">
+      <div class="influencer-card">
+        <img src="https://via.placeholder.com/150" alt="Influencer">
+        <h3>Influencer Name</h3>
+        <p>Style advice about matching bold colors with neutral tones.</p>
+        <button class="view-content" data-id="1">Follow</button>
+      </div>
+
+      <div class="influencer-card">
+        <img src="https://via.placeholder.com/150" alt="Influencer">
+        <h3>Influencer Name 2</h3>
+        <p>Wardrobe essentials for minimalist fashion.</p>
+        <button class="view-content" data-id="2">Follow</button>
+      </div>
+
+      <div class="influencer-card">
+        <img src="https://via.placeholder.com/150" alt="Influencer">
+        <h3>Influencer Name 3</h3>
+        <p>How to accessorize your outfits effectively.</p>
+        <button class="view-content" data-id="3">Follow</button>
+      </div>
+
+      <!-- Add more influencer cards as needed -->
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Fashion Influencer Hub</p>
+  </footer>
+
+  <script src="paid.js"></script>
+  <script>
+    // Handle content upload
+    document.getElementById('uploadForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent the form from submitting normally
+
+      // Simulate a backend delay using setTimeout
+      setTimeout(() => {
+        // Show a popup message to inform the user
+        alert('Your content has been successfully uploaded!');
+
+        // Optionally, you could reset the form after the upload
+        event.target.reset();
+      }, 2000); // 2000 milliseconds (2 seconds) delay
+    });
+
+    // Handle influencer follow button
+    document.querySelectorAll('.view-content').forEach(button => {
+      button.addEventListener('click', function() {
+        const influencerId = this.getAttribute('data-id');
+        
+        // Open influencer-specific page in a new tab
+        window.open(`influencer${influencerId}.html`, '_blank');
+      });
+    });
+  </script>
+</body>
+</html>

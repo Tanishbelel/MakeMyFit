@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Store</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <h1>MakeMyFit</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="wardrobe.html">Wardrobe</a></li>
+            <li><a href="contact.html" class="active">Contact Us</a></li>
+        </ul>
+    </header>
+
+    <!-- Contact Us Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-info">
+                <h2>Get in Touch</h2>
+                <p>We'd love to hear from you! Fill out the form below or contact us directly.</p>
+
+                <div class="contact-details">
+                    <p><strong>Address:</strong> Fr. Agnel Ashram, Bandstand Promenade, Mount Mary, Bandra West, Mumbai, Maharashtra 400050</p>
+                    <p><strong>Email:</strong>binarybits@gmail.com</p>
+                    <p><strong>Phone:</strong> +91 9680303756</p>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h2>Contact Us</h2>
+                <form action="submit-form.php" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="map">
+            <h2>Find Us Here</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=PLACEHOLDER_FOR_MAP" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h3>Store</h3>
+                <p>Your go-to destination for the latest fashion trends. Explore our collection and stay ahead of the style curve.</p>
+                <div class="socials">
+                    <a href="#"><img src="facebook.webp" alt="Facebook"></a>
+                    <a href="#"><img src="social-media-instagram-icon-transparent-background-172928815.webp" alt="Instagram"></a>
+                    <a href="#"><img src="twitter.png" alt="Twitter"></a>
+                </div>
+            </div>
+
+            <div class="footer-section links">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section subscribe">
+                <h3>Stay Updated</h3>
+                <p>Sign up to receive the latest news and exclusive offers directly in your inbox.</p>
+                <form class="subscribe-form">
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Store. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,207 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2 {
+    color: #1E223A;
+}
+
+p {
+    color: #555;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar h1 {
+    color: #1E223A;
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar ul li a.active {
+    background-color: #1E90FF;
+    color: white;
+}
+
+.navbar ul li a:hover {
+    background-color: #E0F7FA;
+    color: #1E90FF;
+}
+
+/* Introduction Section */
+.intro-section {
+    background-color: #F8F9FA;
+    padding: 60px 0;
+    text-align: left;
+}
+
+.intro-section h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+.intro-section p {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.right-img {
+    float: right;
+    width: 300px;
+    margin: 20px;
+    position: absolute;
+    left: 1150px;
+    bottom: 220px;
+}
+
+/* Mission Section */
+.mission-section {
+    background: linear-gradient(135deg, #E0FFFF, #F8E2E7);
+    display: flex;
+    justify-content: flex-end; /* Align the content to the right */
+    padding: 5px;
+}
+
+.mission-section h1 {
+    text-align: right; /* Text should align to the right */
+    font-weight: 700;
+}
+
+.mission-section p {
+     /* Restrict text width to 60% */
+     float: right; /* Float the section to the right */
+     max-width: 40%; /* Restrict the width to 40% of the container */
+     margin-right: 0; /* Optional, if you want no margin on the right */
+     padding: 20px;
+     text-align: right; /* Ensure text aligns right */
+     border-radius: 8px;
+}
+
+.left-img{
+    float: left;
+    width: 300px;
+    position: absolute;
+    height: auto;
+    right: 1000px;
+    top: 510px;
+}
+/* Key Features Section */
+.features-section {
+    display: flex;
+    justify-content: flex-start; /* Align the content to the left */
+    padding: 50px 0;
+}
+
+.features-section h2, .features-section ul {
+    text-align: left; /* Keep the content aligned to the left */
+}
+
+.features-section ul {
+    width: 60%; /* Restrict the width to 60% of the container */
+    font-size: large;
+    font-weight: 500;
+}
+.third-img{
+    float: right;
+    width: 300px;
+    margin: 20px;
+    position: absolute;
+    left: 1000px;
+    bottom: -560px;
+}
+/* Team Section */
+.team-section {
+    background: linear-gradient(135deg, #E0FFFF, #F8E2E7);
+    display: flex;
+    justify-content: flex-end; /* Align the content to the right */
+    padding: 50px 0;
+}
+
+.team-section h2, .team-section p {
+    text-align: right; /* Text should align to the right */
+}
+
+.team-section p {
+    float: right; /* Float the section to the right */
+    max-width: 40%; /* Restrict the width to 40% of the container */
+    margin-right: 0; /* Optional, if you want no margin on the right */
+    padding: 20px;
+    text-align: right; /* Ensure text aligns right */
+    border-radius: 8px;
+}
+.fourth-image{
+    float: left;
+    width: 300px;
+    position: absolute;
+    height: auto;
+    right: 1000px;
+    top: 1300px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .intro-section h1 {
+        font-size: 28px;
+    }
+
+    .intro-section p, .features-section ul li {
+        font-size: 16px;
+    }
+
+    .right-img {
+        width: 100%;
+        float: none;
+        margin: 20px 0;
+    }
+}

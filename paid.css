@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f7f9fc;
+    color: #333;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    background-color: #34495e; /* Dark blue background */
+    color: white;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+.upload-section, .advice-section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.upload-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.upload-form input, .upload-form textarea, .upload-form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.upload-form button {
+    background-color: #3498db; /* Blue button */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.upload-form button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+.advice-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.influencers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.influencer-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.influencer-card:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+.influencer-card img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.influencer-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.influencer-card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.view-content {
+    background-color: #e74c3c; /* Red button */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.view-content:hover {
+    background-color: #c0392b; /* Darker red on hover */
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    background-color: #34495e; /* Same as header */
+    color: white;
+    padding: 20px 0;
+}

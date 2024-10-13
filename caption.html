@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outfit</title>
+    <link rel="stylesheet" href="caption.css"> <!-- Link your CSS file here -->
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <h1>MakeMyFit</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="wardrobe.html" class="active">Wardrobe</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    
+    <main>
+        <div id="outfit-upload">
+            <input type="file" id="outfitInput" accept="image/*" style="display: none;">
+            <button id="uploadBtn">Upload Photo</button>
+        </div>
+
+        <div id="outfitPreview" hidden>
+            <img id="previewImage" alt="Post" />
+        </div>
+
+        <div id="social-sharing" hidden>
+            <a id="share-facebook" href="#" target="_blank">Share on Facebook</a>
+             <a id="share-insta" href="#" target="_blank">Share on Instagram</a> 
+        </div>
+
+        
+        <!-- Caption Section -->
+<div id="captionSection">
+    <h2>Generated Captions</h2>
+    <table id="captionTable">
+        <tbody>
+            <!-- Captions will be populated here -->
+        </tbody>
+    </table>
+</div>
+
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section about">
+                </div>
+            </div>
+    
+            <div class="footer-section links">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section subscribe">
+                <h3>Stay Updated</h3>
+                <p>Sign up to receive the latest news and exclusive offers directly in your inbox.</p>
+                <form class="subscribe-form">
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2024 Store. All rights reserved. | With love MakeMyFit</p>
+        </div>
+    </footer>
+    
+
+    <script src="caption.js"></script> <!-- Link your JavaScript file here -->
+</body>
+</html>

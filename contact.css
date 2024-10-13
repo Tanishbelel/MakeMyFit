@@ -1,0 +1,245 @@
+/* General styles from previous designs */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f7f7;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar h1 {
+    font-size: 24px;
+    color: #1E223A;
+    font-weight: bold;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar ul li a.active, .navbar ul li a:hover {
+    background-color: #1E90FF;
+    color: white;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 80px 40px;
+    background: linear-gradient(135deg, #E0FFFF, #F8E2E7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.contact-info {
+    width: 45%;
+    color: #333;
+}
+
+.contact-info h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #1E90FF;
+}
+
+.contact-info p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.contact-details {
+    font-size: 14px;
+}
+
+.contact-form {
+    width: 45%;
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    font-size: 28px;
+    color: #1E90FF;
+    margin-bottom: 20px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+.contact-form button {
+    padding: 12px 20px;
+    background-color: #1E90FF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    font-weight: bold;
+}
+
+.contact-form button:hover {
+    background-color: #1565C0;
+}
+
+/* Map Section */
+.map-section {
+    padding: 60px 0;
+    text-align: center;
+    background-color: #E0F7FA;
+}
+
+.map-section h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.map iframe {
+    width: 80%;
+    height: 400px;
+    border: none;
+}
+
+/* Footer */
+footer {
+    background-color: #1E223A;
+    color: white;
+    padding: 40px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+.footer-section {
+    flex: 1;
+    margin-right: 30px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    color: #1E90FF;
+    margin-bottom: 15px;
+}
+
+.footer-section p, .footer-section ul {
+    font-size: 14px;
+    color: #aaa;
+}
+
+.footer-section ul {
+    list-style-type: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #aaa;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: white;
+}
+
+.socials a img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    filter: invert(1);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px 0;
+    background-color: #16192B;
+    color: #aaa;
+}
+
+.footer-bottom p {
+    font-size: 12px;
+}
+
+.footer-section.subscribe input[type="email"] {
+    padding: 10px;
+    width: 70%;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.footer-section.subscribe button {
+    padding: 10px 20px;
+    background-color: #1E90FF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.footer-section.subscribe button:hover {
+    background-color: #1565C0;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px 0;
+    background-color: #16192B;
+    color: #aaa;
+}
+
+.footer-bottom p {
+    font-size: 12px;
+}

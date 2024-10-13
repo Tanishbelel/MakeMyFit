@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festive Season Planner</title>
+    <link rel="stylesheet" href="fp.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <h1>Festive Planner</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="wardrobe.html" class="active">Wardrobe</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Select Your Festival</h1>
+        <div class="festival-grid" id="festivalGrid">
+            <!-- Festival cards will be dynamically inserted here -->
+        </div>
+
+        <button id="moreBtn" class="more-btn">More Festivals</button>
+
+        <div id="outfitSuggestion" class="outfit-suggestion" style="display:none;">
+            <h2 id="festivalTitle">Festival Outfit Suggestions</h2>
+            <div id="suggestions">
+                <!-- Outfit suggestions will be displayed here -->
+            </div>
+            <button id="closeBtn">Close</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Festive Planner. All rights reserved.</p>
+    </footer>
+
+    <script src="fp.js"></script>
+</body>
+</html>
